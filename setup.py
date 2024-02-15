@@ -52,6 +52,7 @@ setup(
         "plone.app.dexterity",
         "plone.restapi",
         "z3c.jbot",
+        "pas.plugins.authomatic",
     ],
     extras_require={
         "test": [

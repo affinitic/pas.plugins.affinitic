@@ -8,6 +8,8 @@
 
   <i18n:registerTranslations directory="locales" />
 
+  <include package="pas.plugins.authomatic" />
+
   <include package=".browser" />
 
   <include file="permissions.zcml" />
