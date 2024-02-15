@@ -7,14 +7,38 @@ Collection of authentication tools and plugins
 Features
 --------
 
-- Can be bullet points
+- Authomatic provider for Keycloak
 
 
-Examples
---------
+Configuration Example
+---------------------
 
-This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
+example ::
+
+    {
+        "keycloak": {
+            "id": 1,
+            "display": {
+                "title": "Keycloak",
+                "cssclasses": {
+                    "button": "plone-btn plone-btn-default",
+                    "icon": "glypicon glyphicon-github"
+                },
+                "as_form": false
+            },
+            "propertymap": {
+                "email": "email",
+                "name": "fullname"
+            },
+            "well_known": "http://localhost:9080/realms/Test/.well-known/openid-configuration",
+            "class_": "pas.plugins.affinitic.providers.keycloak.Keycloak",
+            "consumer_key": "Realm Name",
+            "consumer_secret": "secret key",
+            "access_headers": {
+                "User-Agent": "Plone (pas.plugins.authomatic)"
+            }
+        }
+    }
 
 
 Documentation
