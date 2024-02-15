@@ -9,3 +9,5 @@ exclude .mcli
 exclude Dockerfile
 exclude Makefile
 exclude cookiecutter.json
+exclude news
+recursive-exclude news *
