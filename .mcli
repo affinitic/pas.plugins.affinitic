@@ -1,0 +1,6 @@
+{
+  "python": "3.11",
+  "plone_version": "6.0.8",
+  "name": "pas.plugins.affinitic",
+  "package": true
+}
