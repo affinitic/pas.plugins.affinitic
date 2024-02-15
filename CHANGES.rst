@@ -7,3 +7,12 @@ Changelog
    https://github.com/plone/plone.releaser/blob/master/ADD-A-NEWS-ITEM.rst
 
 .. towncrier release notes start
+
+1.0.0a1 (2024-02-15)
+--------------------
+
+New features:
+
+
+- Initial release.
+  [mpeeters] (initial)
