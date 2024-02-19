@@ -1,7 +1,7 @@
 graft src/pas
 graft docs
 include *.rst
-global-exclude *.pyc
+global-exclude *.pyc *.pyo
 exclude *.cfg
 exclude .coveragerc
 exclude .editorconfig
