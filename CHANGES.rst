@@ -8,6 +8,16 @@ Changelog
 
 .. towncrier release notes start
 
+1.0.0a3 (2024-02-19)
+--------------------
+
+New features:
+
+
+- Add a generic provider for OpenID Connect
+  [mpeeters] (#2)
+
+
 1.0.0a2 (2024-02-19)
 --------------------
 
