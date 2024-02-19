@@ -8,6 +8,16 @@ Changelog
 
 .. towncrier release notes start
 
+1.0.0a2 (2024-02-19)
+--------------------
+
+Internal:
+
+
+- Add Plone 4 compatibility
+  [mpeeters] (#1)
+
+
 1.0.0a1 (2024-02-15)
 --------------------
 
