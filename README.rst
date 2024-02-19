@@ -32,7 +32,7 @@ example ::
             },
             "well_known": "http://localhost:9080/realms/Test/.well-known/openid-configuration",
             "class_": "pas.plugins.affinitic.providers.keycloak.Keycloak",
-            "consumer_key": "Realm Name",
+            "consumer_key": "Client Name",
             "consumer_secret": "secret key",
             "access_headers": {
                 "User-Agent": "Plone (pas.plugins.authomatic)"
