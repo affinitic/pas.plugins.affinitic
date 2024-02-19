@@ -46,13 +46,12 @@ setup(
     zip_safe=False,
     python_requires=">=3.11",
     install_requires=[
-        "setuptools",
-        # -*- Extra requirements: -*-
-        "plone.api",
-        "plone.app.dexterity",
-        "plone.restapi",
-        "z3c.jbot",
         "pas.plugins.authomatic",
+        "plone.api",
+        "plone.restapi",
+        "requests",
+        "setuptools",
+        "z3c.jbot",
     ],
     extras_require={
         "test": [
