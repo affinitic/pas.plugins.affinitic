@@ -15,7 +15,7 @@ long_description = "\n\n".join(
 
 setup(
     name="pas.plugins.affinitic",
-    version="1.0.0a4",
+    version="1.0.0a5.dev0",
     description="Collection of authentication tools and plugins",
     long_description=long_description,
     # Get more from https://pypi.org/classifiers/
