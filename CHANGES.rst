@@ -8,6 +8,16 @@ Changelog
 
 .. towncrier release notes start
 
+1.0.0a4 (2024-02-21)
+--------------------
+
+Bug fixes:
+
+
+- Fix an issue with provider id with keycloak
+  [mpeeters] (#2)
+
+
 1.0.0a3 (2024-02-19)
 --------------------
 
