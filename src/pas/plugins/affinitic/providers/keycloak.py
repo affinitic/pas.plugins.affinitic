@@ -10,6 +10,7 @@ __all__ = ("Keycloak",)
 
 
 class Keycloak(OpenIDConnect):
+    provider_id = "keycloak"
 
     @staticmethod
     def _x_user_parser(user, data):

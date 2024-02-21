@@ -18,6 +18,7 @@ class OpenIDConnect(OAuth2):
         "profile",
     ]
     user_info_scope = []
+    provider_id = "oidc"
 
     supported_user_attributes = core.SupportedUserAttributes(
         id=True,
@@ -34,7 +35,7 @@ class OpenIDConnect(OAuth2):
 
     @property
     def well_known_url(self):
-        return self.settings.config["oidc"]["well_known"]
+        return self.settings.config[self.provider_id]["well_known"]
 
     @property
     @forever.memoize
