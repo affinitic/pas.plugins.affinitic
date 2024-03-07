@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 
-from pas.plugins.affinitic.providers.openidconnect import OpenIDConnect
 from authomatic.providers.oauth2 import PROVIDER_ID_MAP
+from pas.plugins.affinitic import utils
+from pas.plugins.affinitic.providers.openidconnect import OpenIDConnect
 
 import jwt
 
@@ -29,6 +30,12 @@ class Keycloak(OpenIDConnect):
             user.first_name = data.get("given_name")
             user.last_name = data.get("family_name")
             user.email = data.get("email")
+            user.roles = ["Member"]
+            roles = data.get("realm_access", {}).get('roles', [])
+            user.roles.extend([r for r in roles if r in utils.roles_list()])
+            user.groups = []
+            groups = [g.replace("/", "") for g in data.get("groups", [])]
+            user.groups.extend([g for g in groups if g in utils.groups_list()])
         return user
 
 
