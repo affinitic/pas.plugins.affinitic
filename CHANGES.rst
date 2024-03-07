@@ -8,6 +8,16 @@ Changelog
 
 .. towncrier release notes start
 
+1.0.0a5 (2024-03-07)
+--------------------
+
+New features:
+
+
+- Implement groups and roles enumeration for Keycloak
+  [mpeeters] (#4)
+
+
 1.0.0a4 (2024-02-21)
 --------------------
 
